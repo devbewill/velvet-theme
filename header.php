@@ -20,8 +20,11 @@
 <?php
   $header_background_color = get_option('header_background_color');
   $content_link_color = get_option('content_link_color');
+  $tags_background_coolor = get_option('tags_background_color');
+  $tags_post_footer = get_option('tags_post_footer');
   $logo = get_option('velvet_logo');
   $header_image = get_option('velvet_header_image');
+
 ?>
 <!-- LOGO SECTION -->
 
@@ -30,6 +33,8 @@
 	.logo {background-image: url(	<?php echo $logo ?>) } 
 	.site-header { background-color:  <?php echo $header_background_color; ?>; }
 	.entry-content a { color:  <?php echo $content_link_color; ?>; }
+	.categories-navigation a { background-color: <?php echo $tags_background_coolor ?>;}
+	.entry-footer a, .cat-links a { background-color: <?php echo $tags_post_footer ?>; }
 </style>
 <!-- LOGO SECTION END -->
 </head>

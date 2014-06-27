@@ -11,9 +11,9 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function velvet_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->get_setting( 'blogname' )		->transport  = 'postMessage';
+	$wp_customize->get_setting( 'blogdescription' ) ->transport  = 'postMessage';
+	$wp_customize->get_setting( 'header_textcolor' )->transport  = 'postMessage';
 
 // Color Customization
 	$colors = array();
@@ -26,6 +26,18 @@ function velvet_customize_register( $wp_customize ) {
 		'slug'=>'content_link_color', 
 		'default' => '#88C34B',
 		'label' => __('Content Link Color', 'velvet')
+	);
+
+	$colors[] = array(
+		'slug'=>'tags_background_color', 
+		'default' => '#222',
+		'label' => __('Filter Color', 'velvet')
+	);
+
+	$colors[] = array(
+		'slug'=>'tags_post_footer', 
+		'default' => '#222',
+		'label' => __('Tags Post', 'velvet')
 	);
 
 	foreach( $colors as $color ) {
