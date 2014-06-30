@@ -817,25 +817,69 @@ object {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	color: #fff;
 }
 
 .home-container {
-	height: 100%;
 	background: linear-gradient(to bottom right, rgba(227,5,94, 0.90), rgba(100,1,133, 0.90));
-	border: 5px solid #fff;
+	border: 8px solid #fff;
+	border-top: none;
+	font-size: 2rem;
+	height: 100%;
 }
 
 .home-navigation {
 	width: 100%;
-	height: 40px;
+	height: 50px;
 }
 
 .home-brand {
+	left: 50px;
+	background: #222;
+	font-size: 2em;
+	padding: 20px 10px 0;
+	position: absolute;
+	text-align: center;
+}
+
+ul.nav {
+	float: right;
+	line-height: 50px;
+	margin-right: 40px;
+	text-decoration: none;
+}
+ul.nav li {
+	display: inline-block;
+	font-size: 0.8em;
+	margin: 0 10px;
+}
+
+ul.nav li a {
 	color: #f4f4f4;
-	font-size: 35px;
-	font-family: 'Montserrat';
+	padding: 3px 5px;
+	text-transform: uppercase;
+}
+
+ul.nav li a:hover {
+	background-color: #fff;
+	color: #c52f44;
+}
+.intro-text {
+	color: #f4f4f4;
+	font-weight: 400;
+	margin: 300px auto;
+	text-align: center;
+}
+
+.jobs {
+	font-size: 4em;
 	font-weight: 700;
-	padding-left: 15px;
+}
+
+.sub-jobs {
+	color: #ccc;
+	font-size: 1.5em;
+	text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------

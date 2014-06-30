@@ -19,14 +19,7 @@
 
 <!-- LOGO SECTION END -->
 <body>
-	<section class="image-fullscreen">
-		<div class="home-container">
-			<div class="home-navigation">
-				<span class="home-brand">DEVBEWILL</span>
-			</div>
-		</div>
-	</section>
-</body>
+
 
 
 
