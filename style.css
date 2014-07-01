@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:300,700);
 
 /*
@@ -812,7 +812,7 @@ object {
 .image-fullscreen { 
 	width: 100%;
 	height: 100%;
-	background: url('http://localhost/WORDPRESS/wp-content/uploads/2014/06/pic-bg.jpg') no-repeat center; position: fixed; z-index: -1; 
+	background: url('pic-bg.jpg') no-repeat center; position: fixed; z-index: -1; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -861,25 +861,52 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
-	background-color: #fff;
+	background-color: #ccff00;
 	color: #c52f44;
 }
 .intro-text {
 	color: #f4f4f4;
-	font-weight: 400;
-	margin: 300px auto;
+	font-weight: 300;
+	margin: 200px auto 0;
 	text-align: center;
 }
 
 .jobs {
 	font-size: 4em;
 	font-weight: 700;
+	line-height: 0.9em;
 }
 
 .sub-jobs {
 	color: #ccc;
-	font-size: 1.5em;
+	font-size: 1.3em;
+	line-height: 0.9em;
+	padding-top: 30px;
 	text-transform: uppercase;
+}
+
+.twits {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 0.8em;
+	line-height: 1.3em;
+	width: 300px;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+.twits img {
+	position: absolute;
+	top: -10px;
+	left: -115px;
+	width: 100px;
+
+}
+.twits p { margin-bottom: 0 }
+.twits a { color: #ccff00;}
+.twits .date {
+	color: #ccc;
+	font-size: 0.7em;
 }
 
 /*--------------------------------------------------------------
