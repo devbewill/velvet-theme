@@ -861,25 +861,50 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
-	background-color: #fff;
+	background-color: #ccff00;
 	color: #c52f44;
 }
 .intro-text {
 	color: #f4f4f4;
-	font-weight: 400;
-	margin: 300px auto;
+	font-weight: 300;
+	margin: 300px auto 0;
 	text-align: center;
 }
 
 .jobs {
 	font-size: 4em;
 	font-weight: 700;
+	line-height: 0.9em;
 }
 
 .sub-jobs {
 	color: #ccc;
-	font-size: 1.5em;
+	font-size: 1.3em;
+	line-height: 0.9em;
+	padding-top: 30px;
 	text-transform: uppercase;
+}
+
+.twits {
+	font-style: italic;
+	font-size: 1.1em;
+	line-height: 1.2em;
+	width: 500px;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+.twits img {
+	position: absolute;
+	left: -115px;
+	width: 100px;
+
+}
+.twits p { margin-bottom: 0 }
+.twits a { color: #ccff00;}
+.twits .date {
+	color: #ccc;
+	font-size: 0.7em;
 }
 
 /*--------------------------------------------------------------

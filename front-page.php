@@ -1,4 +1,6 @@
 <?php
+require_once('twitterFeed/config.php');
+
 /*
 Template Name: Front-page
 */
@@ -23,8 +25,18 @@ Template Name: Front-page
 			</div>
 			
 			<div class="intro-text">
-				<h1 class="jobs">Front end developer</h1>
+				<h1 class="jobs">Frontend developer</h1>
 				<h2 class="sub-jobs">working to make the web awesome</h2>
+			</div>
+			<div class="twits">
+			<img src="twits.png" alt="">
+			<?php
+				foreach($finalArray as $tweet){
+					$date = $tweet['created_at'];
+					echo '<p>' . $tweet['text'] . '</p>'
+					. "<span class='date'>" . time_ago($date) . "</span>";
+				}
+			?>
 			</div>
 
 		</div>
