@@ -1,6 +1,5 @@
 <?php
 require_once('twitterFeed/config.php');
-
 /*
 Template Name: Front-page
 */
