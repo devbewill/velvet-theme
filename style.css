@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:300,700);
+@import url(http://fonts.googleapis.com/css?family=Days+One:400);
+@import url(http://fonts.googleapis.com/css?family=Changa+One:400);
 
 /*
 Theme Name: velvet
@@ -809,6 +811,13 @@ object {
    FRONT-PAGE
 --------------------------------------------------------------*/
 
+#wip {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin-left: -89px;
+}
+
 .image-fullscreen { 
 	width: 100%;
 	height: 100%;
@@ -836,6 +845,7 @@ object {
 .home-brand {
 	left: 50px;
 	background: #222;
+	font-family: 'Changa One', cursive;
 	font-size: 2em;
 	padding: 20px 10px 0;
 	position: absolute;
@@ -867,7 +877,7 @@ ul.nav li a:hover {
 .intro-text {
 	color: #f4f4f4;
 	font-weight: 300;
-	margin: 200px auto 0;
+	margin: 300px auto 0;
 	text-align: center;
 }
 
@@ -888,12 +898,13 @@ ul.nav li a:hover {
 .twits {
 	font-family: 'Open Sans', sans-serif;
 	font-style: italic;
-	font-size: 0.8em;
+	font-size: 1em;
 	line-height: 1.3em;
-	width: 300px;
+	max-width: 400px;
 	position: absolute;
-	bottom: 50px;
-	right: 50px;
+	bottom: 60px;
+	left: 50%;
+	margin-left: -150px;
 }
 .twits img {
 	position: absolute;
@@ -932,11 +943,41 @@ ul.nav li a:hover {
 	.main-navigation ul {
 		float: none;
 	}
+
+	#wip {
+		display: none;
+	}
+
+/*----------------
+  FRONT-PAGE
+------------------*/
+.home-brand {
+	position: static;
+	float: left;
+	width: 100%;
+}
+.intro-text{
+	font-size: 1.3rem;
+	margin-top: 100px;
+}
+
+.twits {
+	font-size: 1.8rem;
+}
+.twits img {
+	position: static;
+	margin: 0 auto;
+}
+
 }
 
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+	#wip {
+		display: none;
+	}
+
 	.site-title {
 		font-size: 2.5em;
 		padding:15px 0;
@@ -946,5 +987,21 @@ and (max-device-width : 480px) {
 	}
 	.main-navigation ul {
 		float: none;
+	}
+	.home-brand {
+		position: static;
+		float: left;
+		width: 100%;
+	}
+	.twits {
+		font-size: 1.5rem;
+		margin: 
+		50px auto;
+		position: static;
+		width: 280px;
+	}
+
+	.twits img {
+		display: none;
 	}
 }

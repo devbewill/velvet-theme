@@ -22,13 +22,15 @@ Template Name: Front-page
 					<li><a href="">resume</a></li>
 				</ul>
 			</div>
+
+			<img src="wip.png" alt="" id="wip">
 			
 			<div class="intro-text">
 				<h1 class="jobs">Frontend developer</h1>
 				<h2 class="sub-jobs">working to make the web awesome</h2>
 			</div>
 			<div class="twits">
-			<img src="twits.png" alt="">
+			<img id="bird" src="twits.png" alt="">
 			<?php
 				foreach($finalArray as $tweet){
 					$date = $tweet['created_at'];
