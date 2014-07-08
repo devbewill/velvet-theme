@@ -29,15 +29,16 @@ Template Name: Front-page
 				<h1 class="jobs">Frontend developer</h1>
 				<h2 class="sub-jobs">working to make the web awesome</h2>
 			</div>
-			<div class="twits">
-			<img id="bird" src="twits.png" alt="">
-			<?php
-				foreach($finalArray as $tweet){
-					$date = $tweet['created_at'];
-					echo '<p>' . $tweet['text'] . '</p>'
-					. "<span class='date'>" . time_ago($date) . "</span>";
-				}
-			?>
+			<div class="footer">
+				<div class="twits">
+					<img id="bird" src="twits.png" alt="">
+					<?php
+						foreach($finalArray as $tweet){
+							$date = $tweet['created_at'];
+							echo '<p>' . $tweet['text'] . "<span class='date'>" . time_ago($date) . "</span>". '</p>';
+						}
+					?>
+				</div>
 			</div>
 
 		</div>

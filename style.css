@@ -834,12 +834,16 @@ object {
 	border: 8px solid #fff;
 	border-top: none;
 	font-size: 2rem;
-	height: 100%;
+	min-height: 100%;
+	position: relative;
+	text-align: center;
 }
 
 .home-navigation {
-	width: 100%;
+	clear: both;
+	float: left;
 	height: 50px;
+	width: 100%;
 }
 
 .home-brand {
@@ -849,7 +853,6 @@ object {
 	font-size: 2em;
 	padding: 20px 10px 0;
 	position: absolute;
-	text-align: center;
 }
 
 ul.nav {
@@ -875,10 +878,11 @@ ul.nav li a:hover {
 	color: #c52f44;
 }
 .intro-text {
-	color: #f4f4f4;
-	font-weight: 300;
-	margin: 300px auto 0;
-	text-align: center;
+	clear: both;
+	float: left;
+	margin: 20% 0 0;
+	padding-bottom: 150px;
+	width: 100%;
 }
 
 .jobs {
@@ -895,27 +899,35 @@ ul.nav li a:hover {
 	text-transform: uppercase;
 }
 
-.twits {
-	font-family: 'Open Sans', sans-serif;
-	font-style: italic;
-	font-size: 1em;
-	line-height: 1.3em;
-	max-width: 400px;
+.footer {
+    bottom: 0;
+	clear: both;
+	float: left;
+	height: 150px;
 	position: absolute;
-	bottom: 60px;
-	left: 50%;
-	margin-left: -150px;
+	width: 100%;
+}
+
+.twits {
+	float: right;
+	font-family: 'Open Sans', Sans-serif;
+	font-style: italic;
+	padding-right: 30px;
+	text-align: left;
 }
 .twits img {
-	position: absolute;
-	top: -10px;
-	left: -115px;
-	width: 100px;
-
+	width: 80px;
 }
-.twits p { margin-bottom: 0 }
+.twits p {
+	display: inline-block;
+	font-size: 0.8em;
+	margin: 0 auto;
+	padding-top: 30px;
+	width: 500px;
+}
 .twits a { color: #ccff00;}
 .twits .date {
+	display: block;
 	color: #ccc;
 	font-size: 0.7em;
 }
@@ -940,7 +952,7 @@ ul.nav li a:hover {
 	.site-description {
 		padding: 0 15px;
 	}
-	.main-navigation ul {
+	ul.nav {
 		float: none;
 	}
 
@@ -948,26 +960,27 @@ ul.nav li a:hover {
 		display: none;
 	}
 
-/*----------------
-  FRONT-PAGE
-------------------*/
-.home-brand {
-	position: static;
-	float: left;
-	width: 100%;
-}
-.intro-text{
-	font-size: 1.3rem;
-	margin-top: 100px;
-}
+	/*----------------
+	  FRONT-PAGE
+	------------------*/
+	.home-brand {
+		position: static;
+		float: left;
+		width: 100%;
+	}
+	.intro-text{
+		font-size: 1.3rem;
+		margin-top: 200px;
+	}
 
-.twits {
-	font-size: 1.8rem;
-}
-.twits img {
-	position: static;
-	margin: 0 auto;
-}
+	.twits {
+		display: none;
+		font-size: 1.8rem;
+	}
+	.twits img {
+		position: static;
+		margin: 0 auto;
+	}
 
 }
 
@@ -985,7 +998,7 @@ and (max-device-width : 480px) {
 	.site-description {
 		padding: 0 15px;
 	}
-	.main-navigation ul {
+	ul.nav {
 		float: none;
 	}
 	.home-brand {
@@ -994,14 +1007,6 @@ and (max-device-width : 480px) {
 		width: 100%;
 	}
 	.twits {
-		font-size: 1.5rem;
-		margin: 
-		50px auto;
-		position: static;
-		width: 280px;
-	}
-
-	.twits img {
 		display: none;
 	}
 }
