@@ -16,4 +16,4 @@
 		}, false );
 	}
 })();
-// test
+console.log(test);
